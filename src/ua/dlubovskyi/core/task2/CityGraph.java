@@ -40,7 +40,8 @@ public class CityGraph {
 			City from = getCityByName(firstCity);
 			City to = getCityByName(secondCity);
 			City currentCity = from;
-			
+			if (!from.getCostToNeighors().containsKey(to.getIndex())) {
+			}
 			return currentMinCost;
 		}
 		return -1;

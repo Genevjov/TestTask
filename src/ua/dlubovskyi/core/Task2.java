@@ -1,9 +1,12 @@
 package ua.dlubovskyi.core;
 
+import java.io.ObjectInputStream.GetField;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Scanner;
 
 import ua.dlubovskyi.core.task2.City;
+import ua.dlubovskyi.core.task2.CityGraph;
 
 /**
  * 
@@ -13,10 +16,9 @@ import ua.dlubovskyi.core.task2.City;
  */
 public class Task2 {
 	/**
-	 * Method for 3rd task execution
+	 * Method for 2nd task execution
 	 */
 	public static void executeTaskThree() {
-
 		Scanner scanner = new Scanner(System.in);
 		int numberOfTests = scanner.nextInt();
 		if (numberOfTests > 10 || numberOfTests < 1) {
@@ -43,8 +45,10 @@ public class Task2 {
 		}
 		int numberOfCityCount = scanner.nextInt();
 		if (scanner.nextLine().isEmpty()) {
-
+			for (int i = 0; i < numberOfCityCount; i++) {
+				String[] cit = scanner.nextLine().split(" ");
+				System.out.println();
+			}
 		}
 	}
-
 }
