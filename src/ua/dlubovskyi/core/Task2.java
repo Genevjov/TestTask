@@ -1,6 +1,9 @@
 package ua.dlubovskyi.core;
 
+import java.util.HashMap;
 import java.util.Scanner;
+
+import ua.dlubovskyi.core.task2.City;
 
 /**
  * 
@@ -26,10 +29,22 @@ public class Task2 {
 			return;
 		}
 		for (int i = 1; i <= numbersOfCities; i++) {
+			String name = scanner.nextLine();
+			City city = new City(i, name);
+			int numOfNeigh = scanner.nextInt();
+			HashMap<Integer, Integer> neighCost = new HashMap<>();
+			for (int j = 0; i < numOfNeigh; j++) {
+				String neighor = scanner.nextLine();
+				neighCost.put(Character.getNumericValue(neighor.charAt(0)),
+						Character.getNumericValue(neighor.charAt(3)));
+			}
+			city.setCostToNeighors(neighCost);
 
 		}
+		int numberOfCityCount = scanner.nextInt();
 		if (scanner.nextLine().isEmpty()) {
-			
+
 		}
 	}
+
 }
