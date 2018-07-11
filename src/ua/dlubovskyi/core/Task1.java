@@ -9,9 +9,9 @@ package ua.dlubovskyi.core;
 public class Task1 {
 	/**
 	 * Method for getting quantity of brackets sequence using formula 
-	 * 		  n-1 
+	 * 	   n-1 
 	 * d[i] = E d[i]*d[i - 1 - j] 
-	 * 		  i=0
+	 * 	   i=0
 	 * 
 	 * @param num -number to find
 	 */
