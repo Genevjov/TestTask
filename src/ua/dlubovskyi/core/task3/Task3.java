@@ -1,4 +1,4 @@
-package ua.dlubovskyi.core;
+package ua.dlubovskyi.core.task3;
 
 import java.math.BigInteger;
 

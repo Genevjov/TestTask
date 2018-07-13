@@ -1,4 +1,4 @@
-package ua.dlubovskyi.core;
+package ua.dlubovskyi.core.task1;
 
 /**
  * Getting quantity of brackets sequence
